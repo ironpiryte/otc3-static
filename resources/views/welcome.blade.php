@@ -1,21 +1,18 @@
 <x-layout>
 
- <div class="row g-0 align-items-center bg-dark-blue"> 
-    <div class="col-2 d-flex flex-column align-items-end">
-      <img src="{{ asset('storage/training.png') }}" class="stacked-image" alt="Training">
-      <img src="{{ asset('storage/teaching.png') }}" class="stacked-image" alt="Teaching">
-      <img src="{{ asset('storage/research.png') }}" class="stacked-image" alt="Research">
+  <div class="row g-0 align-items-stretch bg-dark-blue hero-row">
+
+    <div class="hero-wrapper">
+      <img src="{{ asset('storage/full-hero-banner-desktop.png') }}"
+          class="hero-desktop img-fluid w-100"
+          alt="Cyber Defense Center Banner">
+
+      <img src="{{ asset('storage/full-hero-banner-mobile.png') }}"
+          class="hero-mobile img-fluid w-100"
+          alt="Cyber Defense Center Banner">
     </div>
 
-    <div class="col-8 banner-container p-0">
-      <img src="{{ asset('storage/banner-oitc3-Small.png') }}" 
-           class="hero-banner" 
-           alt="OITC3 Banner">
-    </div>
-    <div class="col-2">
-
-    </div>
-</div>
+  </div>
 
   <nav class="navbar navbar-expand-lg bg-body-secondary">
     <div class="container-fluid">
@@ -66,7 +63,7 @@
 
   <!-- Main Content: Welcome Section -->
   <div class="col-12 col-md-8">
-    <h2 class="mb-3">Welcome to the OREGON TECH Cybersecurity Community Clinic!</h2>
+    <h2 class="mb-3">Welcome to the OREGON TECH Cyber Defense Center!</h2>
     <div class="row align-items-start">
       <div class="col-lg-6">
         <p class="lead">This is a place for current and prospective students to learn about Cybersecurity while protecting the businesses and citizens of our community.</p>
@@ -75,9 +72,9 @@
         </p>
       </div>
       <div class="col-lg-4 me-3 text-center">
-        <img src="{{ asset( 'storage/cyberdefensecenter-small.png' ) }}"
+        <img src="{{ asset( 'storage/cyberdefensecenter.png' ) }}"
              class="img-fluid rounded shadow-sm"
-             alt="OITC3 Students working in the lab">
+             alt="OREGON TECH Cyber Defense Center Logo">
       </div>
     </div>
   </div> 

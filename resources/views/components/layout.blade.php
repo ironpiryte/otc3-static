@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="icon" type="image/x-icon" href="{{ asset( 'favicon.ico' ) }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset( 'storage/cyberdefensecenter_favicon.ico' ) }}" />
 
     <title>{{ isset( $title ) ? $title : 'OTC3 Demo' }}</title>
 
@@ -22,35 +22,7 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-light bg-transparent shadow-sm fixed-top m-0 p-0 zindex-fixed">
-  <div class="container-fluid m-0 p-0">
-    <a class="navbar-brand bg-secondary bg-opacity-50 text-white m-0 p-0" href="#">
-      <img src="{{ asset( 'storage/oregontech-oit-text-white-snipped.png' ) }}"
-           class="w-75 m-0 p-0"
-           alt="Oregon Tech Text.">
-        {{ config('app.name', 'Laravel') }}
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-    <!-- Left Side Of Navbar -->
-      <ul class="navbar-nav me-auto">
-
-      </ul>
-
-      <!-- Right Side Of Navbar -->
-      <ul class="navbar-nav ms-auto">
-        <li>
-          <img src="{{ asset( 'storage/RightSideNavBar.png' ) }}"
-               class="w-75 m-0 p-0 float-end"
-               alt="Oregon Tech Text.">
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 <main class="pb-1">
     {{ $slot }}
 </main>
@@ -65,8 +37,6 @@
             <div class="col-md footer_contact">
                 <p class="mb-0 text-end">Would you like to know more?</p>
                 <a class="pagination justify-content-end" href="mailto:ryan.reynolds5@msubillings.edu">Ryan.Reynolds2@oit.edu</a>
-                <a class="pagination justify-content-end mb-3" href="mailto:josh.fischer@oit.edu">Josh.Fischer@oit.edu</a>
-
             </div>
         </div>
     </div>
