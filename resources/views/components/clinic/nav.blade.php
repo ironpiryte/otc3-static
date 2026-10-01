@@ -20,7 +20,7 @@
                 <a href="#faq">FAQ</a>
                 <a href="#get-started">Get Started</a>
 
-                <a href="YOUR-CLINIC-LOGIN-URL"
+                <a href="http://localhost:8081/"
                 class="clinic-login-btn"
                 target="_blank"
                 rel="noopener">
