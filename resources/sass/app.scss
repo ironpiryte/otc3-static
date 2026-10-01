@@ -11,6 +11,14 @@
     overflow: hidden; /* Keeps everything tidy */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 90px;
+}
+
 .hero-mobile {
     display: none;
 }
@@ -48,4 +56,1042 @@
 .clinic-nav-item:hover {
     background-color: rgba(0, 55, 103, 0.05); /* Faint blue tint on hover */
     padding-left: 1.25rem; /* Subtle "nudge" effect when hovering */
+}
+
+.degree-section {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.degree-section-title {
+    color: #003b5c;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+}
+
+
+/* Each degree area */
+.degree-feature {
+    padding: 2rem 0;
+    border-bottom: 2px solid rgba(0, 59, 92, 0.18);
+}
+
+.degree-feature-last {
+    border-bottom: none;
+}
+
+
+/* Degree heading */
+.degree-title {
+    color: #003b5c;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+
+/* Linked subtitle */
+.degree-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #d69a00;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.degree-link:hover {
+    color: #003b5c;
+    transform: translateX(4px);
+}
+
+
+/* Images */
+.degree-image {
+    width: 100%;
+    max-width: 240px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border: 4px solid #ffffff;
+    outline: 2px solid #0076a8;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 6px 12px rgba(0, 0, 0, 0.25),
+        0 14px 30px rgba(0, 59, 92, 0.22);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Slight "coming out of screen" effect */
+.degree-image:hover {
+    transform: translateY(-5px) scale(1.02);
+
+    box-shadow:
+        0 10px 18px rgba(0, 0, 0, 0.28),
+        0 20px 38px rgba(0, 59, 92, 0.28);
+}
+
+
+/* Paragraph readability */
+.degree-feature p {
+    line-height: 1.65;
+    color: #333;
+}
+
+
+/* Mobile */
+@media (max-width: 767.98px) {
+
+    .degree-section {
+        padding: 1.25rem;
+    }
+
+    .degree-feature {
+        padding: 1.5rem 0;
+    }
+
+    .degree-image {
+        max-width: 220px;
+        height: 175px;
+    }
+
+    .degree-title,
+    .degree-link {
+        text-align: center;
+        display: block;
+    }
+}
+
+.cyber-news-card {
+    background: #fff;
+    border-left: 4px solid #0076a8;
+    border-radius: 8px;
+    padding: 1.25rem;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.12),
+        0 10px 24px rgba(0, 59, 92, 0.10);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.cyber-news-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.16),
+        0 16px 28px rgba(0, 59, 92, 0.15);
+}
+
+.cyber-news-card h5 {
+    color: #003b5c;
+    font-weight: 700;
+    margin-top: 0.4rem;
+}
+
+.news-source {
+    color: #d69a00;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
+}
+
+.cyber-job-card {
+    background: #fff;
+    border-left: 4px solid #d69a00;
+    border-radius: 8px;
+    padding: 1.25rem;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.12),
+        0 10px 24px rgba(0, 59, 92, 0.10);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.cyber-job-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.16),
+        0 16px 28px rgba(0, 59, 92, 0.15);
+}
+
+.cyber-job-card h5 {
+    color: #003b5c;
+    font-weight: 700;
+}
+
+.job-company {
+    font-weight: 600;
+    color: #333;
+}
+
+.job-location {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.job-type {
+    color: #003b5c;
+    font-weight: 600;
+}
+
+.job-salary {
+    color: #198754;
+    font-weight: 700;
+}
+
+.job-posted {
+    color: #777;
+    font-size: 0.85rem;
+}
+
+.job-salary {
+    color: #198754;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.clinic-hero {
+    background:
+        linear-gradient(
+            135deg,
+            #003b5c,
+            #005b85
+        );
+
+    color: white;
+
+    padding: 3rem 2rem;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.clinic-hero h1 {
+    color: #fff;
+}
+
+.clinic-section {
+    background: #fff;
+
+    padding: 2rem;
+
+    border-radius: 10px;
+
+    border-bottom: 2px solid rgba(0, 59, 92, 0.15);
+}
+
+.clinic-section h2 {
+    color: #003b5c;
+    font-weight: 700;
+}
+
+
+/* Clinic image */
+.clinic-image {
+    width: 100%;
+    max-width: 360px;
+
+    object-fit: cover;
+
+    border: 5px solid #fff;
+    outline: 2px solid #0076a8;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.25),
+        0 18px 34px rgba(0, 59, 92, 0.22);
+}
+
+
+/* Feature cards */
+.clinic-card {
+    background: #fff;
+
+    border-top: 4px solid #d69a00;
+
+    border-radius: 8px;
+
+    padding: 1.25rem;
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.clinic-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 22px rgba(0, 59, 92, 0.18);
+}
+
+.clinic-card h4 {
+    color: #003b5c;
+    font-weight: 700;
+}
+
+
+/* Consortium feature */
+.clinic-highlight {
+    background: #003b5c;
+
+    color: white;
+
+    padding: 2.5rem;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+.clinic-highlight h2 {
+    color: white;
+}
+
+
+/* CTA */
+.clinic-cta {
+    background: #f7f8fa;
+
+    padding: 2.5rem;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(0, 59, 92, 0.15);
+}
+
+.clinic-cta h2 {
+    color: #003b5c;
+}
+
+:root {
+    --clinic-navy: #003b64;
+    --clinic-dark-navy: #002b4d;
+    --clinic-gold: #f9b820;
+    --clinic-cream: #f7f3eb;
+    --clinic-text: #18314f;
+}
+
+.clinic-hero,
+.clinic-section,
+.clinic-get-started {
+    background: var(--clinic-cream);
+}
+
+.clinic-display,
+.clinic-section h2,
+.clinic-get-started h2 {
+    color: #002c52;
+    font-family: Georgia, serif;
+    font-weight: 700;
+}
+
+.clinic-display {
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    line-height: 0.95;
+}
+
+.clinic-display span {
+    color: #a87900;
+    font-style: italic;
+}
+
+.clinic-lead,
+.clinic-centered-copy,
+.clinic-intro {
+    color: var(--clinic-text);
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.clinic-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+}
+
+.clinic-dot {
+    width: 10px;
+    height: 10px;
+    background: var(--clinic-gold);
+    border-radius: 50%;
+}
+
+.clinic-btn-primary {
+    background: var(--clinic-navy);
+    color: white;
+    padding: 0.9rem 1.5rem;
+}
+
+.clinic-btn-primary:hover,
+.clinic-btn-primary:focus,
+.clinic-btn-primary:active {
+    background-color: #00558a !important;
+    color: #fff !important;
+    border-color: #00558a !important;
+    box-shadow: 0 6px 16px rgba(0, 59, 100, 0.28);
+    transform: translateY(-2px);
+}
+
+.clinic-btn-primary:visited {
+    color: #fff !important;
+}
+
+.clinic-btn-gold {
+    background: var(--clinic-gold);
+    color: #002b4d;
+    font-weight: 700;
+    padding: 0.9rem 1.5rem;
+}
+
+.clinic-btn-gold:hover,
+.clinic-btn-gold:focus,
+.clinic-btn-gold:active {
+    background-color: #e0a000 !important;
+    color: #002b4d !important;
+    border-color: #e0a000 !important;
+    box-shadow: 0 6px 16px rgba(0, 59, 100, 0.28);
+    transform: translateY(-2px);
+}
+
+.clinic-btn-gold:visited {
+    color: #002b4d !important;
+}
+
+.clinic-metrics {
+    background: var(--clinic-navy);
+    color: white;
+    padding: 2rem 0;
+}
+
+.clinic-metrics strong {
+    display: block;
+    color: var(--clinic-gold);
+    font-size: 2.5rem;
+    font-family: Georgia, serif;
+}
+
+.clinic-metrics span {
+    font-size: 0.9rem;
+}
+
+.clinic-section,
+.clinic-get-started {
+    padding: 5rem 0;
+}
+
+.clinic-eyebrow {
+    color: #a87900;
+    font-size: 0.75rem;
+    letter-spacing: 0.25rem;
+    font-weight: 700;
+}
+
+.clinic-audience-card,
+.clinic-service-card,
+.clinic-inquiry-form {
+    background: white;
+    border: 1px solid #ded8cc;
+    border-radius: 14px;
+    padding: 2rem;
+}
+
+.student-card {
+    border-top: 4px solid var(--clinic-gold);
+}
+
+.organization-card {
+    border-top: 4px solid var(--clinic-navy);
+}
+
+.clinic-process {
+    background: var(--clinic-dark-navy);
+    padding: 5rem 0;
+}
+
+.clinic-phase-card {
+    background: #123e60;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.phase-number {
+    color: var(--clinic-gold);
+    font-size: 2.25rem;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.clinic-carousel {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.clinic-carousel img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.clinic-carousel .carousel-caption {
+    background: rgba(0, 43, 77, 0.82);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.clinic-service-card {
+    min-height: 225px;
+}
+
+.service-number {
+    font-family: monospace;
+    color: #718096;
+    font-size: 0.8rem;
+    letter-spacing: 0.12rem;
+}
+
+.clinic-inquiry-form {
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.clinic-subnav {
+    background: #fffdf8;
+    border-bottom: 1px solid #e4ded2;
+    z-index: 1020;
+}
+
+.clinic-subnav .container-fluid {
+    min-height: 72px;
+}
+
+.clinic-subnav-logo img {
+    width: 72px;
+    height: auto;
+    display: block;
+}
+
+.clinic-subnav-links a {
+    color: #263a56;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.clinic-subnav-links a:hover {
+    color: #a87900;
+}
+
+.clinic-login-btn {
+    background: var(--clinic-gold);
+    color: #002b4d !important;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 12px rgba(249, 184, 32, 0.25);
+}
+
+.clinic-login-btn:hover {
+    background: #d99a00;
+    color: #002b4d !important;
+    transform: translateY(-1px);
+}
+
+.clinic-faq-item {
+    border-bottom: 1px solid #ded8cc;
+}
+
+.clinic-faq-button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 1.25rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: #002b4d;
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.clinic-faq-button:hover {
+    color: #a87900;
+}
+
+.clinic-faq-answer {
+    padding: 0 2rem 1.25rem 0;
+    color: #2c4663;
+    line-height: 1.7;
+}
+
+.clinic-faq-icon {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.clinic-faq-icon::before,
+.clinic-faq-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 2px;
+    background: #f0a800;
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+/* collapsed = plus */
+.clinic-faq-icon::before {
+    transform: translate(-50%, -50%);
+}
+
+.clinic-faq-icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* expanded = X */
+.clinic-faq-button[aria-expanded="true"] .clinic-faq-icon::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.clinic-faq-button[aria-expanded="true"] .clinic-faq-icon::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.clinic-leadership-section {
+    background: var(--clinic-cream);
+    padding: 5rem 0;
+}
+
+.clinic-leadership-header {
+    max-width: 850px;
+    margin: 0 auto 2rem;
+}
+
+.clinic-leadership-header h2 {
+    color: #002b4d;
+    font-family: Georgia, serif;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 700;
+    margin-top: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.clinic-leadership-header p {
+    color: #2f4a67;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+
+/* FACULTY CARD */
+.clinic-leader-card {
+    background: #fff;
+    border: 1px solid #ded8cc;
+    border-top: 4px solid var(--clinic-gold);
+    border-radius: 14px;
+    padding: 2rem;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.clinic-leader-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 24px rgba(0, 43, 77, 0.12);
+}
+
+
+/* INITIAL CIRCLE */
+.clinic-leader-initials {
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--clinic-navy);
+    color: var(--clinic-gold);
+
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    margin-bottom: 1.25rem;
+
+    box-shadow:
+        0 5px 12px rgba(0, 43, 77, 0.22);
+}
+
+
+.clinic-leader-card h3 {
+    color: #002b4d;
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 1.65rem;
+    margin-bottom: 0.25rem;
+}
+
+
+.clinic-leader-role {
+    color: #a87900;
+    font-weight: 700;
+    margin-bottom: 1.1rem;
+}
+
+
+.clinic-leader-card p {
+    color: #2f4a67;
+    line-height: 1.65;
+    margin-bottom: 1.2rem;
+}
+
+
+/* EMAIL AREA */
+.clinic-leader-email {
+    border-top: 1px dashed #ddd6ca;
+    padding-top: 1rem;
+    margin-top: 1.25rem;
+}
+
+.clinic-leader-email a {
+    color: #718096;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.clinic-leader-email a:hover {
+    color: var(--clinic-navy);
+}
+
+@media (max-width: 767.98px) {
+
+    .clinic-leadership-section {
+        padding: 3rem 0;
+    }
+
+    .clinic-leader-card {
+        padding: 1.5rem;
+    }
+
+    .clinic-leadership-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .clinic-leader-initials {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .clinic-leader-card h3,
+    .clinic-leader-role {
+        text-align: center;
+    }
+}
+
+.clinic-platform-section {
+    background: var(--clinic-cream);
+    padding: 5rem 0;
+}
+
+.clinic-platform-section h2 {
+    color: #002b4d;
+    font-family: Georgia, serif;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.clinic-platform-intro {
+    max-width: 720px;
+    color: #2f4a67;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* CARD */
+.platform-card {
+    background: #fff;
+    border: 1px solid #ded8cc;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 26px rgba(0, 43, 77, 0.12);
+}
+
+
+/* TOP GRAPHIC */
+.platform-preview {
+    height: 190px;
+    position: relative;
+    overflow: hidden;
+
+    padding: 1.1rem;
+
+    background:
+        linear-gradient(
+            135deg,
+            #204f67,
+            #003b64 55%,
+            #002b4d
+        );
+}
+
+.platform-preview-label {
+    position: absolute;
+    bottom: 0.9rem;
+    left: 1rem;
+
+    color: #fff;
+
+    font-family: monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12rem;
+}
+
+
+/* BODY */
+.platform-card-body {
+    padding: 1.25rem;
+}
+
+.platform-card-body h4 {
+    color: #002b4d;
+    font-family: Georgia, serif;
+    font-weight: 700;
+    margin-bottom: 0.65rem;
+}
+
+.platform-card-body p {
+    color: #2f4a67;
+    line-height: 1.55;
+    font-size: 0.95rem;
+}
+
+.platform-preview-link {
+    color: #a87900;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.platform-preview-link:hover {
+    color: var(--clinic-navy);
+}
+
+.platform-mockup {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+/* Dashboard */
+.platform-dashboard .platform-mockup::before {
+    content: "";
+
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    right: 5px;
+    height: 48px;
+
+    background:
+        linear-gradient(
+            to right,
+            #eef3f7 0 22%,
+            transparent 22% 24%,
+            #eef3f7 24% 46%,
+            transparent 46% 48%,
+            #eef3f7 48% 70%,
+            transparent 70% 72%,
+            #eef3f7 72% 94%
+        );
+
+    border-radius: 5px;
+}
+
+
+/* Client Profile */
+.platform-profile .platform-mockup::before,
+.platform-assessment .platform-mockup::before {
+    content: "";
+
+    position: absolute;
+    top: 18px;
+    left: 8px;
+
+    width: 58%;
+    height: 9px;
+
+    background: var(--clinic-gold);
+
+    box-shadow:
+        0 16px 0 #c9d8e2,
+        0 32px 0 #c9d8e2,
+        0 48px 0 #c9d8e2;
+
+    border-radius: 3px;
+}
+
+.platform-profile .platform-mockup::after,
+.platform-assessment .platform-mockup::after {
+    content: "";
+
+    position: absolute;
+    top: 88px;
+    left: 8px;
+    right: 8px;
+    height: 36px;
+
+    background:
+        linear-gradient(
+            to right,
+            #dedbd1 0 31%,
+            transparent 31% 33%,
+            #dedbd1 33% 64%,
+            transparent 64% 66%,
+            #dedbd1 66% 100%
+        );
+
+    border-radius: 4px;
+}
+
+
+/* Generator */
+.platform-generator .platform-mockup::before {
+    content: "";
+
+    position: absolute;
+    top: 22px;
+    left: 8px;
+    right: 8px;
+    height: 18px;
+
+    background: #eef3f7;
+
+    box-shadow:
+        0 28px 0 #eef3f7,
+        0 56px 0 #eef3f7;
+
+    border-radius: 4px;
+}
+
+.platform-generator .platform-mockup::after {
+    content: "";
+
+    position: absolute;
+    top: 110px;
+    left: 8px;
+
+    width: 48%;
+    height: 22px;
+
+    background: #b88900;
+
+    border-radius: 3px;
+}
+
+
+/* Intake */
+.platform-intake .platform-mockup::before {
+    content: "";
+
+    position: absolute;
+    top: 18px;
+    left: 8px;
+    right: 8px;
+    height: 16px;
+
+    background: #eef3f7;
+
+    box-shadow:
+        0 27px 0 #eef3f7,
+        0 54px 0 #eef3f7,
+        0 81px 0 #eef3f7;
+
+    border-radius: 4px;
+}
+
+
+/* Instructor */
+.platform-instructor .platform-mockup::before {
+    content: "";
+
+    position: absolute;
+    top: 25px;
+    left: 8px;
+    right: 8px;
+    height: 50px;
+
+    background:
+        linear-gradient(
+            to right,
+            #eef3f7 0 22%,
+            transparent 22% 24%,
+            #eef3f7 24% 46%,
+            transparent 46% 48%,
+            #eef3f7 48% 70%,
+            transparent 70% 72%,
+            #eef3f7 72% 94%
+        );
+
+    border-radius: 5px;
 }
