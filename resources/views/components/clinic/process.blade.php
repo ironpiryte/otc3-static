@@ -58,4 +58,13 @@
         </div>
 
     </div>
+
+    <x-clinic.metrix />
+
+    <div class="text-end mt-4 me-5">
+        <a href="#top" class="back-to-top-link">
+            Back to top ↑
+        </a>
+    </div>
+
 </section>

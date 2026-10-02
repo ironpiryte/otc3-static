@@ -130,5 +130,11 @@
 
         </div>
 
+        <div class="text-end mt-4">
+            <a href="#top" class="back-to-top-link">
+                Back to top ↑
+            </a>
+        </div>
+
     </div>
 </section>

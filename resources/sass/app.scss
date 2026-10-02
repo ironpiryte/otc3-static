@@ -1095,3 +1095,64 @@ section[id] {
 
     border-radius: 5px;
 }
+
+.back-to-top-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+
+    padding: 0.5rem 0.85rem;
+
+    background: #fff;
+    color: var(--clinic-navy);
+
+    border: 1px solid #a87900;
+    border-radius: 999px;
+
+    font-weight: 700;
+    text-decoration: none;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+
+    transition: all 0.2s ease;
+}
+
+.back-to-top-link:hover {
+    // color: #a87900;
+    // transform: translateY(-2px);
+    background: var(--clinic-navy);
+    color: #fff;
+    border-color: var(--clinic-navy);
+    transform: translateY(-2px);
+}
+
+.welcome-section {
+    position: relative;
+    padding: 4.5rem 0;
+    border-top: 1px solid rgba(0, 59, 92, 0.10);
+}
+
+.welcome-section-light {
+    background: #ffffff;
+}
+
+.welcome-section-tint {
+    background: #f7f8f6;
+}
+
+/* Thin visual accent */
+.welcome-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(
+        to right,
+        #003b5c,
+        #d69a00
+    );
+    border-radius: 0 0 4px 4px;
+}
